@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Photographer Dashboard</title>
+
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+
+    <header class="dashboard-header">
+
+        <div>
+            <h1>📸 Photographer Dashboard</h1>
+            <p>Manage client enquiries</p>
+        </div>
+
+        <a href="index.html" class="back-btn">
+            View Website
+        </a>
+
+    </header>
+
+
+    <main class="dashboard-container">
+
+        <div class="dashboard-title">
+
+            <div>
+                <h2>Client Enquiries</h2>
+                <p id="totalEnquiries">
+                    Loading enquiries...
+                </p>
+            </div>
+
+            <button id="refreshBtn">
+                🔄 Refresh
+            </button>
+
+        </div>
+
+
+        <div id="loading">
+            Loading enquiries...
+        </div>
+
+
+        <div id="errorMessage"></div>
+
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Client Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Service</th>
+                        <th>Message</th>
+                        <th>Date</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="enquiryTableBody">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+
+    <script type="module" src="admin.js"></script>
+
+</body>
+
+</html>
